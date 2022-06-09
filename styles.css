@@ -212,3 +212,43 @@ body {
 }
 
 /* Call to Action styling */
+
+.call-to-action {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.call-container {
+    height: 200px;
+    width: 70%;
+    background-color: var(--button-color);
+    border-radius: 12.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.call-title {
+    margin-bottom: 0px;
+    font-size: 24px;
+}
+
+.call-content {
+    font-size: 12px;
+}
+
+.call-to-action-button {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-left: 25%;
+}
+
+.call-button {
+    border: white 2px solid;
+    border-radius: 12.5px;
+    padding: 5px 30px 5px 30px;
+}
