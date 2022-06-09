@@ -12,6 +12,7 @@
     --dark-background: #1F2937;
     --header-textcolor: #F9FAF8;
     --header-linktext: #E5E7EB;
+    --button-color: #3882F6;
 }
 
 body {
@@ -19,6 +20,11 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
+}
+
+.subtext {
+    font-size: 18px;
+    color:var(--header-linktext);
 }
 
 /* Header Styling */
@@ -62,3 +68,43 @@ body {
 }
 
 /* Hero styling */
+
+.hero {
+    background-color: var(--dark-background);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 600px;
+}
+
+.hero-container {
+    margin-left: 15%;
+    width: 35%;
+    height: 300px;
+}
+
+.hero-placeholder-container {
+    height: 300px;
+    background-color: darkgrey;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--header-textcolor)
+}
+
+.hero-button {
+    background-color: var(--button-color);
+    padding: 10px 30px 10px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    color: var(--header-textcolor);
+    font-size: 16px;
+}
