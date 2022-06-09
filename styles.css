@@ -11,7 +11,8 @@
 :root {
     --dark-background: #1F2937;
     --header-textcolor: #F9FAF8;
-    --header-linktext: grey;
+    --header-linktext: #E5E7EB;
+    --subtext-textcolor: grey;
     --button-color: #3882F6;
 }
 
@@ -24,7 +25,9 @@ body {
 
 .subtext {
     font-size: 18px;
-    color:var(--header-linktext);
+    color:var(--subtext-textcolor);
+    margin: 0;
+    padding: 0;
 }
 
 .button {
@@ -89,13 +92,16 @@ body {
 }
 
 .hero-container {
+    display: flex;
+    flex-direction: column;
     margin-left: 15%;
     width: 35%;
     height: 300px;
+    padding-top: 20px;
 }
 
 .hero-placeholder-container {
-    height: 300px;
+    height: 250px;
     background-color: darkgrey;
     width: 35%;
     display: flex;
@@ -105,11 +111,18 @@ body {
 }
 
 .hero-title {
+    margin: 0;
+    padding: 0;
     font-size: 48px;
     font-weight: 900;
-    color: var(--header-textcolor)
+    color: var(--header-textcolor);
+    padding-bottom: 0px;
 }
 
+.hero-button {
+    margin-top: 10px;
+    width: 150px;
+}
 
 
 /* Information Styling */
@@ -123,12 +136,11 @@ body {
 
 .information-title-container {
     display: flex;
-    height: 150px;
+    height: 100px;
     width: 100%;
     text-align: center;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    background-color: white; /*Remove once done testing */
 }
 
 .information-title-text {
@@ -138,25 +150,29 @@ body {
 }
 
 .information-row-container {
-    height: 450px;
+    height: 500px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     margin-left: 20%;
     margin-right: 20%;
 }
 
 .information-picture-container {
-    width: auto;
+    width: 25%;
     text-align: center;
 }
 
 .information-placeholder-picture {
-    background-color: white;
-    height: 200px;
-    width: auto;
+    height: 250px;
     border-radius: 25px;
-    border: var(--button-color) 3px solid;
+    border: var(--button-color) 2px solid;
 }
+
+.subtext-info {
+    margin-top: 10px;
+}
+
+/* Quote Styling */
