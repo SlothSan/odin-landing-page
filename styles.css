@@ -11,7 +11,7 @@
 :root {
     --dark-background: #1F2937;
     --header-textcolor: #F9FAF8;
-    --header-linktext: #E5E7EB;
+    --header-linktext: grey;
     --button-color: #3882F6;
 }
 
@@ -26,6 +26,17 @@ body {
     font-size: 18px;
     color:var(--header-linktext);
 }
+
+.button {
+    background-color: var(--button-color);
+    padding: 10px 30px 10px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    color: var(--header-textcolor);
+    font-size: 16px;
+}
+
 
 /* Header Styling */
 
@@ -99,12 +110,53 @@ body {
     color: var(--header-textcolor)
 }
 
-.hero-button {
-    background-color: var(--button-color);
-    padding: 10px 30px 10px 30px;
+
+
+/* Information Styling */
+
+
+.information {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.information-title-container {
+    display: flex;
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /*Remove once done testing */
+}
+
+.information-title-text {
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--dark-background);
+}
+
+.information-row-container {
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.information-picture-container {
+    width: auto;
+    text-align: center;
+}
+
+.information-placeholder-picture {
+    background-color: white;
+    height: 200px;
+    width: auto;
     border-radius: 25px;
-    cursor: pointer;
-    border: none;
-    color: var(--header-textcolor);
-    font-size: 16px;
+    border: var(--button-color) 3px solid;
 }
